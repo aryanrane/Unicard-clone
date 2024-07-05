@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script src="main.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/logo.jpeg" type="image/png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Uni Cards</title>
+  </head>
+  <body>
+    <header id="home">
+      <video autoplay muted loop id="background-video">
+        <source src="assets/nxt_wave_bg.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <nav>
+        <div class="nav__bar">
+        
+          
+          <div class="nav__logo">
+      
+
+            <svg class="Logo_logo_white__zowGB" width="100"  height= "100" viewBox="0 0 85 60" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M54.894 39.5039H48.6641V19.77H54.894V39.5039ZM30.4021 25.9999V39.504H24.1723V22.3647C24.1723 21.6765 24.4457 21.0165 24.9322 20.5301C25.4188 20.0435 26.0787 19.77 26.7669 19.77H42.3312C43.0195 19.77 43.6793 20.0435 44.1657 20.5301C44.6523 21.0165 44.9257 21.6765 44.9257 22.3647V39.504H38.696V25.9999H30.4021ZM14.2345 33.2742V19.7702H20.4644V36.9095C20.4644 37.5977 20.1909 38.2576 19.7044 38.744C19.2179 39.2307 18.5579 39.5041 17.87 39.5041H2.30544C1.61752 39.5041 0.957379 39.2307 0.470894 38.744C-0.0157201 38.2576 -0.289062 37.5977 -0.289062 36.9095V19.7702H5.9407V33.2742H14.2345Z" fill="black"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M65.289 19.7708C65.289 21.8685 63.5858 23.5717 61.4882 23.5717C59.3905 23.5717 57.6875 21.8685 57.6875 19.7708C57.6875 17.6732 59.3905 15.9702 61.4882 15.9702C63.5858 15.9702 65.289 17.6732 65.289 19.7708Z" fill="black"></path></svg>
+            <a href="#">
+              <svg class="Logo_logo_white__zowGB" viewBox="0 0 85 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M54.894 39.5039H48.6641V19.77H54.894V39.5039ZM30.4021 25.9999V39.504H24.1723V22.3647C24.1723 21.6765 24.4457 21.0165 24.9322 20.5301C25.4188 20.0435 26.0787 19.77 26.7669 19.77H42.3312C43.0195 19.77 43.6793 20.0435 44.1657 20.5301C44.6523 21.0165 44.9257 21.6765 44.9257 22.3647V39.504H38.696V25.9999H30.4021ZM14.2345 33.2742V19.7702H20.4644V36.9095C20.4644 37.5977 20.1909 38.2576 19.7044 38.744C19.2179 39.2307 18.5579 39.5041 17.87 39.5041H2.30544C1.61752 39.5041 0.957379 39.2307 0.470894 38.744C-0.0157201 38.2576 -0.289062 37.5977 -0.289062 36.9095V19.7702H5.9407V33.2742H14.2345Z" fill="black"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M65.289 19.7708C65.289 21.8685 63.5858 23.5717 61.4882 23.5717C59.3905 23.5717 57.6875 21.8685 57.6875 19.7708C57.6875 17.6732 59.3905 15.9702 61.4882 15.9702C63.5858 15.9702 65.289 17.6732 65.289 19.7708Z" fill="black"></path>
+              </svg>
+            </a>
+            <!-- <img src="assets/logo_1.png" alt="" width="30" height="30" class="nav__icon"/>
+            <a href="#">Frippi</a> -->
+          </div>
+          <div class="nav__toggle">
+            <!-- Hamburger Icon -->
+            <svg id="hamburgerIcon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+            </svg>
+            <!-- Close Icon -->
+            <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed" style="display: none;">
+              <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+            </svg>
+          </div>
+          
+          <button class="hoverButton">Uni Paycheck</button>
+        </div>
+      </nav>
+      <div class="sidebar" id="sidebar">
+        <ul class="sidebar__links">
+          <li class="link"><a href="#home">Uni Paycheck</a></li>
+          
+        </ul>
+      </div>
+
+
+
+
+      <div class="directionflex">
+        <div class="section__container header__container">
+          <span><strong>NX Wave.</strong> The next-gen credit card for those who love rewards.</span>
+          <div class="features-line" id="featuresLine">
+            <span>1% Cashback</span>
+            <img src="assets/star.png" alt="Star" class="star-icon" id="starIcon">
+            <span>5x Rewards</span>
+            <img src="assets/star.png" alt="Star" class="star-icon" id="starIcon">
+            <span>Zero Forex Markup</span>
+          </div>
+          
+          <div class="features-line featurePadding">
+            <div class="flex justify-between items-center max-w-[94vw]">
+              <form class="flex flex-col">
+                <div class="flex bg-black p-1 pl-2 rounded-xl justify-between">
+                  <div class="flex items-center">
+                    <input type="text" class="bg-black border-0 outline-none text-white p-2 placeholder-gray-500 w-48 h-12" placeholder="Enter Phone Number" value="">
+                    <span class="w-6 flex items-center justify-end h-full"></span>
+                  </div>
+                  <button type="submit" class="bg-yellow
+                  text-sm leading-7 ml-2 rounded-xl py-2 px-4 disabled:opacity-80 disabled:cursor-not-allowed">
+                    <span>Apply Now</span>
+                  </button>
+                </div>
+              </form>
+              
+            </div>
+          </div>
+          <section>
+            <div class="consent flex flex-col items-center py-4 px-2 max-w-xs dirflx">
+              <div>
+                <input type="checkbox" checked="false" id="consent-msg">
+                <label for="consent-msg" class="text-white md:text-black text-xs leading-3 cursor-pointer mt-2">You agree to be contacted by Uni Cards over Call, SMS, Email or WhatsApp to guide.</label>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="image-section">
+          <img src="assets/nx_wave_hero.png" alt="Your Image">
+        </div>
+      </div>
+
+      
+
+     
+      
+      <!-- Popup Box -->
+      
+    </header>
+
+    <section class="about" id="about">
+        <div class="container">
+            <p>Earn 1% assured cashback <span class="container_gray">on your spends. Get</span> 5X
+
+              more value than cashback <span class="container_gray">at the Uni Store. Enjoy
+              
+                round the clock</span> Whatsapp support.<span class="container_gray">And it's</span>   lifetime free;
+              
+             <span class="container_gray"> no joining fee, no annual charges.</span></span>
+            
+        </div>
+
+
+        <div class="container">
+          <div class="column">
+              <div class="row">
+                <div class="text">
+                  <p>
+                    1% assured cashback on your spends.The more you spend, the more you earn.
+                  </p>
+                </div>
+                  <img src="assets/one_percent_cashback.png" alt="Image 1" class="image">
+                  
+              </div>
+              <div class="row">
+                  <img src="assets/five_x_rewards.png" alt="Image 2" class="image">
+                  <div class="text"><p>
+                    5x more value than your cashback, only at the Uni Store.
+                  </p></div>
+              </div>
+              <div class="row">
+                <div class="text">Zero Forex Markup.
+                  Go international, without any fees.</div>
+                <img src="assets/forex_globe.png" alt="Image 3" class="image">
+                
+            </div>
+          </div>
+          
+      </div>
+      <div class = "container">
+        <p>
+          Lifetime free. No joining fee.
+No annual charges.
+        </p>
+      </div>
+    </section>
+    
+    
+    
+    <!-- ------------------------------------about------------------------------------- -->
+    
+  <!-- ======================================Group feature =========================== -->
+
+    
+
+
+    <!-- ======================================Group feature =========================== -->
+
+
+
+
+    
+
+
+
+<!-------------------------------------------------- contact--------------------------------------- -->
+    
+
+   
+    
+    
+
+    <!----------------------------------------------- contact---------------------------------------------- -->
+
+    <section class="footer">
+      <div class="">
+        <div class="svg_logo">
+          <svg class="Logo_logo_white__zowGB" width="100"  height= "100" viewBox="0 0 85 60" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block"><path fill-rule="evenodd" clip-rule="evenodd" d="M54.894 39.5039H48.6641V19.77H54.894V39.5039ZM30.4021 25.9999V39.504H24.1723V22.3647C24.1723 21.6765 24.4457 21.0165 24.9322 20.5301C25.4188 20.0435 26.0787 19.77 26.7669 19.77H42.3312C43.0195 19.77 43.6793 20.0435 44.1657 20.5301C44.6523 21.0165 44.9257 21.6765 44.9257 22.3647V39.504H38.696V25.9999H30.4021ZM14.2345 33.2742V19.7702H20.4644V36.9095C20.4644 37.5977 20.1909 38.2576 19.7044 38.744C19.2179 39.2307 18.5579 39.5041 17.87 39.5041H2.30544C1.61752 39.5041 0.957379 39.2307 0.470894 38.744C-0.0157201 38.2576 -0.289062 37.5977 -0.289062 36.9095V19.7702H5.9407V33.2742H14.2345Z" fill="white"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M65.289 19.7708C65.289 21.8685 63.5858 23.5717 61.4882 23.5717C59.3905 23.5717 57.6875 21.8685 57.6875 19.7708C57.6875 17.6732 59.3905 15.9702 61.4882 15.9702C63.5858 15.9702 65.289 17.6732 65.289 19.7708Z" fill="#00DCC8"></path></svg>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M54.894 39.5039H48.6641V19.77H54.894V39.5039ZM30.4021 25.9999V39.504H24.1723V22.3647C24.1723 21.6765 24.4457 21.0165 24.9322 20.5301C25.4188 20.0435 26.0787 19.77 26.7669 19.77H42.3312C43.0195 19.77 43.6793 20.0435 44.1657 20.5301C44.6523 21.0165 44.9257 21.6765 44.9257 22.3647V39.504H38.696V25.9999H30.4021ZM14.2345 33.2742V19.7702H20.4644V36.9095C20.4644 37.5977 20.1909 38.2576 19.7044 38.744C19.2179 39.2307 18.5579 39.5041 17.87 39.5041H2.30544C1.61752 39.5041 0.957379 39.2307 0.470894 38.744C-0.0157201 38.2576 -0.289062 37.5977 -0.289062 36.9095V19.7702H5.9407V33.2742H14.2345Z" fill="white"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M65.289 19.7708C65.289 21.8685 63.5858 23.5717 61.4882 23.5717C59.3905 23.5717 57.6875 21.8685 57.6875 19.7708C57.6875 17.6732 59.3905 15.9702 61.4882 15.9702C63.5858 15.9702 65.289 17.6732 65.289 19.7708Z" fill="#00DCC8"></path>
+
+          <p>
+            Indiqube Sigma No.3/B, Nexus Koramangala 3rd Block SBI Colony,
+          </p>
+          <p>
+            Koramangala, Bengaluru, Karnataka 560034
+          </p>
+
+          <br>
+          <p>
+            Contact Us: 080 68216821
+          </p>
+          <p>
+            Email: care@uni.club
+          </p>
+        </div>
+        <div class="footer__socials">
+          <!-- <span>
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+          </span> -->
+          
+        </div>
+        <ul class="footer__nav">
+          <li class="footer__link"><a href="#home">Instagram</a></li>
+          <li class="footer__link"><a href="#about">LinkedIn</a></li>
+          <li class="footer__link"><a href="#group">Twitter</a></li>
+          <li class="footer__link"><a href="#blog">Facebook</a></li>
+          <!-- <li class="footer__link"><a href="#journals">Journals</a></li>
+          <li class="footer__link"><a href="#gallery">Gallery</a></li> -->
+          <li class="footer__link"><a href="#contact">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+    </section>
+
+  </body>
+</html>
